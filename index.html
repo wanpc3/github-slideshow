@@ -1,13 +1,166 @@
----
-layout: presentation
----
+<!DOCTYPE html>
+<html>
 
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- PAGE settings -->
+  <link rel="icon" href="https://templates.pingendo.com/assets/Pingendo_favicon.ico">
+  <title>Conference Aquamarine - Pingendo template</title>
+  <meta name="description" content="Free Bootstrap 4 Pingendo Aquamarine template for unique events.">
+  <meta name="keywords" content="Pingendo conference event aquamarine free template bootstrap 4">
+  <!-- CSS dependencies -->
+  <link rel="stylesheet" href="aquamarine.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <!-- Script: Make my navbar transparent when the document is scrolled to top -->
+  <script src="js/navbar-ontop.js"></script>
+  <!-- Script: Animated entrance -->
+  <script src="js/animate-in.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="">
+    <div class="container justify-content-center"> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar9">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center justify-content-center" id="navbar9">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-2"> <a class="nav-link" href="index.html">Home</a> </li>
+          <li class="nav-item mx-2"> <a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item mx-2"> <a class="nav-link" href="contact2.html">Contact</a></li>
+          <li class="nav-item mx-2"> <a class="nav-link" href="sponsor.html">Partners</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="py-5 text-center text-white h-100 align-items-center d-flex" style="	background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(assets/conference/esports2.png);	background-position: center center, center center;	background-size: cover, cover;	background-repeat: repeat, repeat;">
+    <div class="container py-5">
+      <div class="row">
+        <div class="mx-auto col-lg-8 col-md-10">
+          <h1 class="display-3 mb-4">Welcome to Combo Wombo Official Website !</h1>
+          <p class="lead mb-5">This is our first website. Let's take a look at our professional Esports team </p>
+          <a class="btn btn-lg mx-1 btn-outline-primary" href="#team">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 text-center" id="team">
+    <div class="container">
+      <div class="row">
+        <div class="mx-auto col-md-12">
+          <h1 class="mb-3 bg-light">Teams</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-6 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="assets/conference/dota2.jpg" width="130" alt="Card image cap">
+          <h4> <b>DOTA 2</b> </h4>
+          <p class="mb-0">Explore our DOTA 2 Team</p>
+          <p>
+            <a href="Players.html">View Team</a>
+          </p>
+        </div>
+        <div class="col-lg-6 col-6 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="assets/conference/csgoicon3.png" width="130" alt="Card image cap">
+          <h4> <b>CS GO</b> </h4>
+          <p class="mb-0">Discover our CS:GO Team</p>
+          <p>
+            <a href="csgo.html">View Team</a>
+          </p>
+        </div>
+      </div>
+      <div clss="row">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-6 col-6 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="assets/conference/pubgicon.png" width="130">
+            <h4> <b>PUBG</b> </h4>
+            <p class="mb-0">Explore our new PUBG Team</p>
+            <p>
+              <a href="pubg.html">View Team </a>
+            </p>
+          </div>
+          <div class="col-lg-6 col-6 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="assets/conference/cd2.png" width="130">
+            <h4>
+              <b>Creative Destruction</b>
+            </h4>
+            <p class="mb-0">Explore our CreativeDestruction Team </p>
+            <p>
+              <a href="cd.html">View Team</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-5 text-center align-items-center">
+      <!-- Schedule -->
+      <!-- Sponsor logos -->
+      <!-- Call to action -->
+      <!-- Footer -->
+      <!-- JavaScript dependencies -->
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <!-- Script: Smooth scrolling between anchors in the same page -->
+      <script src="js/smooth-scroll.js"></script>
+      <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
+    </div>
+  </div>
+  <div class="py-5 bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="text-center mx-auto col-md-12">
+          <h1 class="text-white">Partners</h1>
+          <p class="text-white"> We have no partners for this time... </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 p-3"></div>
+        <div class="col-md-4 p-3"></div>
+        <div class="col-md-4 p-3"></div>
+      </div>
+    </div>
+  </div>
+  <div class="py-3 section-dark bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-6 p-3">
+          <h5> <b>Main</b> </h5>
+          <ul class="list-unstyled ">
+            <li> <a href="#">Home</a> </li>
+            <li> <a href="#team">Teams</a> </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-6 p-3">
+          <h5> <b>Others</b> </h5>
+          <ul class="list-unstyled">
+            <li> <a href="sponsor.html">Partners</a> </li>
+            <li> <a href="contact2.html">Contact</a> </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 p-3">
+          <h5> <b>About</b> </h5>
+          <p class="mb-0"> <a href="about.html">Combo Wombo </a></p>
+          <p class="mb=0"> <a href="">Management Team</a> </p>
+        </div>
+        <div class="col-lg-3 col-md-6 p-3">
+          <h5> <b></b> </h5>
+          <div class="row">
+            <div class="col-md-12 d-flex align-items-center justify-content-between my-2"> <a href="#">
+                <i class="d-block fa fa-facebook-official text-muted fa-lg mr-2"></i>
+              </a> <a href="#">
+                <i class="d-block fa fa-instagram text-muted fa-lg mx-2"></i>
+              </a> <a href="#">
+                <i class="d-block fa fa-google text-muted fa-lg mx-2"></i>
+              </a> <a href="#">
+                <i class="d-block fa fa-twitch text-muted fa-lg ml-2"></i>
+              </a> </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p class="mb-0 mt-2">2020 Combo Wombo. All rights reserved</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
